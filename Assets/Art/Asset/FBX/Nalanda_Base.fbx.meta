@@ -1,0 +1,638 @@
+fileFormatVersion: 2
+guid: af72751642275ad4fbfa2e9b58400670
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Floor_base
+    100002: M06
+    100004: M07
+    100006: M08
+    100008: M09
+    100010: M1
+    100012: M1 1
+    100014: M10
+    100016: M10 1
+    100018: M10_Base
+    100020: M10_Floor
+    100022: M10_R1_W
+    100024: M10_R1_W1
+    100026: M11
+    100028: M11 1
+    100030: M11_Base
+    100032: M11_Floor
+    100034: M11_R1_W
+    100036: M11_R1_W1
+    100038: M11_R2_W
+    100040: M11_R2_W 1
+    100042: M1_Base1
+    100044: M1_Base2
+    100046: M1_Base3
+    100048: M1_Base4
+    100050: M1_Base5
+    100052: M1_Base6
+    100054: M1_Floor
+    100056: M1_R1_W
+    100058: M1_R1_W1
+    100060: M1_R2_W
+    100062: M1_Steps1
+    100064: M1_Steps2
+    100066: M1A
+    100068: M1A 1
+    100070: M1A_Base
+    100072: M1A_Base1
+    100074: M1A_Base2
+    100076: M1A_R1_W
+    100078: M1A_R2_W
+    100080: M1A_Steps
+    100082: M1B
+    100084: M1B 1
+    100086: M1B_Base
+    100088: M1B_base
+    100090: M1B_R1_W
+    100092: M1B_R1_W1
+    100094: M4
+    100096: M4 1
+    100098: M4_Base1
+    100100: M4_Base2
+    100102: M4_Base3
+    100104: M4_Floor
+    100106: M4_R1_W
+    100108: M4_R1_W1
+    100110: M4_R2_W
+    100112: M4_R2_W1
+    100114: M6
+    100116: M6_Base
+    100118: M6_Base1
+    100120: M6_Floor
+    100122: M6_R1_W
+    100124: M6_R1_W1
+    100126: M6_R2_W
+    100128: M7
+    100130: M7_Base
+    100132: M7_Floor
+    100134: M7_R1_W
+    100136: M7_R1_W1
+    100138: M7_R2_W
+    100140: M8
+    100142: M8_Base
+    100144: M8_Floor
+    100146: M8_R1_W
+    100148: M8_R1_W1
+    100150: M8_R2_W
+    100152: M9
+    100154: M9_Base
+    100156: M9_Floor
+    100158: M9_R1_W
+    100160: M9_R1_W1
+    100162: M9_R2_W
+    100164: //RootNode
+    100166: Pathway
+    100168: T13
+    100170: T13_Base
+    100172: T13_Building
+    100174: T13_Floor2
+    100176: T14
+    100178: T14_Building
+    100180: T14_Floor
+    100182: T14_Floor2
+    400000: Floor_base
+    400002: M06
+    400004: M07
+    400006: M08
+    400008: M09
+    400010: M1
+    400012: M1 1
+    400014: M10
+    400016: M10 1
+    400018: M10_Base
+    400020: M10_Floor
+    400022: M10_R1_W
+    400024: M10_R1_W1
+    400026: M11
+    400028: M11 1
+    400030: M11_Base
+    400032: M11_Floor
+    400034: M11_R1_W
+    400036: M11_R1_W1
+    400038: M11_R2_W
+    400040: M11_R2_W 1
+    400042: M1_Base1
+    400044: M1_Base2
+    400046: M1_Base3
+    400048: M1_Base4
+    400050: M1_Base5
+    400052: M1_Base6
+    400054: M1_Floor
+    400056: M1_R1_W
+    400058: M1_R1_W1
+    400060: M1_R2_W
+    400062: M1_Steps1
+    400064: M1_Steps2
+    400066: M1A
+    400068: M1A 1
+    400070: M1A_Base
+    400072: M1A_Base1
+    400074: M1A_Base2
+    400076: M1A_R1_W
+    400078: M1A_R2_W
+    400080: M1A_Steps
+    400082: M1B
+    400084: M1B 1
+    400086: M1B_Base
+    400088: M1B_base
+    400090: M1B_R1_W
+    400092: M1B_R1_W1
+    400094: M4
+    400096: M4 1
+    400098: M4_Base1
+    400100: M4_Base2
+    400102: M4_Base3
+    400104: M4_Floor
+    400106: M4_R1_W
+    400108: M4_R1_W1
+    400110: M4_R2_W
+    400112: M4_R2_W1
+    400114: M6
+    400116: M6_Base
+    400118: M6_Base1
+    400120: M6_Floor
+    400122: M6_R1_W
+    400124: M6_R1_W1
+    400126: M6_R2_W
+    400128: M7
+    400130: M7_Base
+    400132: M7_Floor
+    400134: M7_R1_W
+    400136: M7_R1_W1
+    400138: M7_R2_W
+    400140: M8
+    400142: M8_Base
+    400144: M8_Floor
+    400146: M8_R1_W
+    400148: M8_R1_W1
+    400150: M8_R2_W
+    400152: M9
+    400154: M9_Base
+    400156: M9_Floor
+    400158: M9_R1_W
+    400160: M9_R1_W1
+    400162: M9_R2_W
+    400164: //RootNode
+    400166: Pathway
+    400168: T13
+    400170: T13_Base
+    400172: T13_Building
+    400174: T13_Floor2
+    400176: T14
+    400178: T14_Building
+    400180: T14_Floor
+    400182: T14_Floor2
+    2100000: RM_Wall01
+    2100002: RM_Wall_03
+    2100004: RM_Wall_02
+    2100006: Base_1006
+    2100008: SM_Wall_1001
+    2100010: M1_Floor1
+    2100012: SM_Wall_1006
+    2100014: SM_Wall_1002
+    2100016: Base_1005
+    2100018: SM_Wall_1003
+    2100020: SM_Wall_1004
+    2100022: Base_1004
+    2100024: Base_1003
+    2100026: SM_Wall_1005
+    2100028: Base_1001
+    2100030: Base_1002
+    2100032: T13_Base1
+    2100034: T13_Floor3
+    2100036: T13_Building1
+    2100038: base
+    2100040: Pathway1
+    2300000: Floor_base
+    2300002: M06
+    2300004: M07
+    2300006: M08
+    2300008: M09
+    2300010: M1 1
+    2300012: M10 1
+    2300014: M10_Base
+    2300016: M10_Floor
+    2300018: M10_R1_W
+    2300020: M10_R1_W1
+    2300022: M11 1
+    2300024: M11_Base
+    2300026: M11_Floor
+    2300028: M11_R1_W
+    2300030: M11_R1_W1
+    2300032: M11_R2_W
+    2300034: M11_R2_W 1
+    2300036: M1_Base1
+    2300038: M1_Base2
+    2300040: M1_Base3
+    2300042: M1_Base4
+    2300044: M1_Base5
+    2300046: M1_Base6
+    2300048: M1_Floor
+    2300050: M1_R1_W
+    2300052: M1_R1_W1
+    2300054: M1_R2_W
+    2300056: M1_Steps1
+    2300058: M1_Steps2
+    2300060: M1A 1
+    2300062: M1A_Base
+    2300064: M1A_Base1
+    2300066: M1A_Base2
+    2300068: M1A_R1_W
+    2300070: M1A_R2_W
+    2300072: M1A_Steps
+    2300074: M1B 1
+    2300076: M1B_Base
+    2300078: M1B_base
+    2300080: M1B_R1_W
+    2300082: M1B_R1_W1
+    2300084: M4 1
+    2300086: M4_Base1
+    2300088: M4_Base2
+    2300090: M4_Base3
+    2300092: M4_Floor
+    2300094: M4_R1_W
+    2300096: M4_R1_W1
+    2300098: M4_R2_W
+    2300100: M4_R2_W1
+    2300102: M6_Base
+    2300104: M6_Base1
+    2300106: M6_Floor
+    2300108: M6_R1_W
+    2300110: M6_R1_W1
+    2300112: M6_R2_W
+    2300114: M7_Base
+    2300116: M7_Floor
+    2300118: M7_R1_W
+    2300120: M7_R1_W1
+    2300122: M7_R2_W
+    2300124: M8_Base
+    2300126: M8_Floor
+    2300128: M8_R1_W
+    2300130: M8_R1_W1
+    2300132: M8_R2_W
+    2300134: M9_Base
+    2300136: M9_Floor
+    2300138: M9_R1_W
+    2300140: M9_R1_W1
+    2300142: M9_R2_W
+    2300144: Pathway
+    2300146: T13_Base
+    2300148: T13_Building
+    2300150: T13_Floor2
+    2300152: T14_Building
+    2300154: T14_Floor
+    2300156: T14_Floor2
+    3300000: Floor_base
+    3300002: M06
+    3300004: M07
+    3300006: M08
+    3300008: M09
+    3300010: M1 1
+    3300012: M10 1
+    3300014: M10_Base
+    3300016: M10_Floor
+    3300018: M10_R1_W
+    3300020: M10_R1_W1
+    3300022: M11 1
+    3300024: M11_Base
+    3300026: M11_Floor
+    3300028: M11_R1_W
+    3300030: M11_R1_W1
+    3300032: M11_R2_W
+    3300034: M11_R2_W 1
+    3300036: M1_Base1
+    3300038: M1_Base2
+    3300040: M1_Base3
+    3300042: M1_Base4
+    3300044: M1_Base5
+    3300046: M1_Base6
+    3300048: M1_Floor
+    3300050: M1_R1_W
+    3300052: M1_R1_W1
+    3300054: M1_R2_W
+    3300056: M1_Steps1
+    3300058: M1_Steps2
+    3300060: M1A 1
+    3300062: M1A_Base
+    3300064: M1A_Base1
+    3300066: M1A_Base2
+    3300068: M1A_R1_W
+    3300070: M1A_R2_W
+    3300072: M1A_Steps
+    3300074: M1B 1
+    3300076: M1B_Base
+    3300078: M1B_base
+    3300080: M1B_R1_W
+    3300082: M1B_R1_W1
+    3300084: M4 1
+    3300086: M4_Base1
+    3300088: M4_Base2
+    3300090: M4_Base3
+    3300092: M4_Floor
+    3300094: M4_R1_W
+    3300096: M4_R1_W1
+    3300098: M4_R2_W
+    3300100: M4_R2_W1
+    3300102: M6_Base
+    3300104: M6_Base1
+    3300106: M6_Floor
+    3300108: M6_R1_W
+    3300110: M6_R1_W1
+    3300112: M6_R2_W
+    3300114: M7_Base
+    3300116: M7_Floor
+    3300118: M7_R1_W
+    3300120: M7_R1_W1
+    3300122: M7_R2_W
+    3300124: M8_Base
+    3300126: M8_Floor
+    3300128: M8_R1_W
+    3300130: M8_R1_W1
+    3300132: M8_R2_W
+    3300134: M9_Base
+    3300136: M9_Floor
+    3300138: M9_R1_W
+    3300140: M9_R1_W1
+    3300142: M9_R2_W
+    3300144: Pathway
+    3300146: T13_Base
+    3300148: T13_Building
+    3300150: T13_Floor2
+    3300152: T14_Building
+    3300154: T14_Floor
+    3300156: T14_Floor2
+    4300000: M11_R1_W
+    4300002: M11_R1_W1
+    4300004: M11_R2_W
+    4300006: M11_Base
+    4300008: M11
+    4300010: M11_Floor
+    4300012: M10
+    4300014: M10_R1_W
+    4300016: M11_R2_W
+    4300018: M10_R1_W1
+    4300020: M10_Base
+    4300022: M10_Floor
+    4300024: M09
+    4300026: M9_Base
+    4300028: M9_R2_W
+    4300030: M9_R1_W
+    4300032: M9_R1_W1
+    4300034: M9_Floor
+    4300036: M08
+    4300038: M8_Base
+    4300040: M8_R1_W1
+    4300042: M8_R1_W
+    4300044: M8_R2_W
+    4300046: M8_Floor
+    4300048: M7_Base
+    4300050: M07
+    4300052: M7_R2_W
+    4300054: M7_R1_W
+    4300056: M7_R1_W1
+    4300058: M7_Floor
+    4300060: M06
+    4300062: M6_Base1
+    4300064: M6_Base
+    4300066: M6_R2_W
+    4300068: M6_R1_W
+    4300070: M6_R1_W1
+    4300072: M6_Floor
+    4300074: M4_Base3
+    4300076: M4_Base2
+    4300078: M4_Base1
+    4300080: M4
+    4300082: M4_R2_W
+    4300084: M4_R1_W1
+    4300086: M4_R2_W1
+    4300088: M4_R1_W
+    4300090: M4_Floor
+    4300092: M1_Base6
+    4300094: M1_Base5
+    4300096: M1_Steps1
+    4300098: M1_Steps2
+    4300100: M1_Base4
+    4300102: M1_Base3
+    4300104: M1_Base2
+    4300106: M1_Base1
+    4300108: M1
+    4300110: M1_R2_W
+    4300112: M1_R1_W
+    4300114: M1_R1_W1
+    4300116: M1_Floor
+    4300118: M1B
+    4300120: M1B_base
+    4300122: M1B_R1_W
+    4300124: M1B_R1_W1
+    4300126: M1B_Base
+    4300128: M1A_Base
+    4300130: M1A
+    4300132: M1A_Steps
+    4300134: M1A_Base1
+    4300136: M1A_R1_W
+    4300138: M1A_R2_W
+    4300140: M1A_Base2
+    4300142: T13_Base
+    4300144: T13_Floor2
+    4300146: T13_Building
+    4300148: T14_Floor
+    4300150: T14_Floor2
+    4300152: T14_Building
+    4300154: Floor_base
+    4300156: Pathway
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base_1001
+    second: {fileID: 2100000, guid: a3d7fb3ccd55b9b42816d78846b2c298, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base_1002
+    second: {fileID: 2100000, guid: cbf9b35f5818b7449aa8350516f4ebc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base_1003
+    second: {fileID: 2100000, guid: ac39e1e51f8b20d40a4abce23ed36311, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base_1004
+    second: {fileID: 2100000, guid: d249279e3ed3d674ababf507861a1903, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base_1005
+    second: {fileID: 2100000, guid: e7e538e6dc03c244a974a39e380bda4f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base_1006
+    second: {fileID: 2100000, guid: 57c3fe08531b41a428a1f35be107be86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M1_Floor1
+    second: {fileID: 2100000, guid: b18d43a0fa806e646bfbc821cea5ca91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pathway1
+    second: {fileID: 2100000, guid: fba333b6186e7f342b196bac3858733f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RM_Wall01
+    second: {fileID: 2100000, guid: 1e6b158f3b2fca64387e70b1d9328ca6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RM_Wall_02
+    second: {fileID: 2100000, guid: 545d445ca35c2e340a7153a18f641a73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RM_Wall_03
+    second: {fileID: 2100000, guid: 15027a30c510d9948a048d4ff2adf19e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SM_Wall_1001
+    second: {fileID: 2100000, guid: 45ea26e9daf156d4784e5bbb23142b87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SM_Wall_1002
+    second: {fileID: 2100000, guid: 1aa81d2b7e58e5448a81a5f4d756d08b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SM_Wall_1003
+    second: {fileID: 2100000, guid: 2bce29560c4e6ba45ad8c8ad9bf7a406, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SM_Wall_1004
+    second: {fileID: 2100000, guid: dec3a3aa91cc8364d825f03a6d1fead3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SM_Wall_1005
+    second: {fileID: 2100000, guid: d006c5c2524557749a2f2a8120689b66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SM_Wall_1006
+    second: {fileID: 2100000, guid: ff4abbc1cf7e9e54ab50d9c88b09fa93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T13_Base1
+    second: {fileID: 2100000, guid: 5b2e5723a32cddb4180b839daba0640b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T13_Building1
+    second: {fileID: 2100000, guid: 805ebbc739babba43920ca0da36c0bb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: T13_Floor3
+    second: {fileID: 2100000, guid: 6e762d16ccb336c4f834e6d11b9a72fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base
+    second: {fileID: 2100000, guid: a2cfaf52ec3d1014eb2a8a7468fbf727, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

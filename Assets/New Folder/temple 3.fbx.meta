@@ -1,0 +1,648 @@
+fileFormatVersion: 2
+guid: 490045eab85fa0840a5e6034eac4f085
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: B3
+    100002: B4
+    100004: D1
+    100006: D1 1
+    100008: D2
+    100010: D3
+    100012: D4
+    100014: D5
+    100016: D6
+    100018: D7
+    100020: Door1
+    100022: Door2
+    100024: Door_Pillaar_up
+    100026: Floor
+    100028: Floor1
+    100030: Floor2
+    100032: Floor3
+    100034: group23
+    100036: group26
+    100038: group27
+    100040: group34
+    100042: group35
+    100044: kalasam
+    100046: kalasam 1
+    100048: kalasam 2
+    100050: kalasam1
+    100052: kalasam2
+    100054: kalasam3
+    100056: kalasam4
+    100058: pCube20
+    100060: pCube21
+    100062: pCube22
+    100064: pCube23
+    100066: polySurface1
+    100068: polySurface100
+    100070: polySurface104
+    100072: polySurface105
+    100074: polySurface107
+    100076: polySurface108
+    100078: polySurface109
+    100080: polySurface2
+    100082: polySurface3
+    100084: polySurface37
+    100086: polySurface38
+    100088: polySurface4
+    100090: polySurface40
+    100092: polySurface40 1
+    100094: polySurface40 2
+    100096: polySurface41
+    100098: polySurface42
+    100100: polySurface48
+    100102: polySurface54
+    100104: polySurface55
+    100106: polySurface61
+    100108: polySurface63
+    100110: polySurface64
+    100112: polySurface69
+    100114: polySurface69 1
+    100116: polySurface70
+    100118: polySurface70 1
+    100120: polySurface71
+    100122: polySurface71 1
+    100124: polySurface72
+    100126: polySurface72 1
+    100128: polySurface75
+    100130: polySurface75 1
+    100132: polySurface77
+    100134: polySurface77 1
+    100136: polySurface79
+    100138: polySurface8
+    100140: polySurface81
+    100142: polySurface82
+    100144: polySurface85
+    100146: polySurface87
+    100148: polySurface90
+    100150: polySurface93
+    100152: pPlane102
+    100154: pPlane103
+    100156: pPlane104
+    100158: pPlane105
+    100160: pPlane106
+    100162: pPlane107
+    100164: pPlane108
+    100166: pPlane109
+    100168: pPlane109 1
+    100170: pPlane110
+    100172: pPlane110 1
+    100174: pPlane111
+    100176: pPlane113
+    100178: pPlane114
+    100180: pPlane115
+    100182: pPlane116
+    100184: pPlane118
+    100186: pPlane14
+    100188: pPlane22
+    100190: pPlane24
+    100192: pPlane53
+    100194: pPlane53 1
+    100196: pPlane53 2
+    100198: pPlane54
+    100200: pPlane96
+    100202: pPlane97
+    100204: STEPS1
+    100206: STEPS2
+    100208: STEPS3
+    100210: STEPS4
+    100212: //RootNode
+    400000: B3
+    400002: B4
+    400004: D1
+    400006: D1 1
+    400008: D2
+    400010: D3
+    400012: D4
+    400014: D5
+    400016: D6
+    400018: D7
+    400020: Door1
+    400022: Door2
+    400024: Door_Pillaar_up
+    400026: Floor
+    400028: Floor1
+    400030: Floor2
+    400032: Floor3
+    400034: group23
+    400036: group26
+    400038: group27
+    400040: group34
+    400042: group35
+    400044: kalasam
+    400046: kalasam 1
+    400048: kalasam 2
+    400050: kalasam1
+    400052: kalasam2
+    400054: kalasam3
+    400056: kalasam4
+    400058: pCube20
+    400060: pCube21
+    400062: pCube22
+    400064: pCube23
+    400066: polySurface1
+    400068: polySurface100
+    400070: polySurface104
+    400072: polySurface105
+    400074: polySurface107
+    400076: polySurface108
+    400078: polySurface109
+    400080: polySurface2
+    400082: polySurface3
+    400084: polySurface37
+    400086: polySurface38
+    400088: polySurface4
+    400090: polySurface40
+    400092: polySurface40 1
+    400094: polySurface40 2
+    400096: polySurface41
+    400098: polySurface42
+    400100: polySurface48
+    400102: polySurface54
+    400104: polySurface55
+    400106: polySurface61
+    400108: polySurface63
+    400110: polySurface64
+    400112: polySurface69
+    400114: polySurface69 1
+    400116: polySurface70
+    400118: polySurface70 1
+    400120: polySurface71
+    400122: polySurface71 1
+    400124: polySurface72
+    400126: polySurface72 1
+    400128: polySurface75
+    400130: polySurface75 1
+    400132: polySurface77
+    400134: polySurface77 1
+    400136: polySurface79
+    400138: polySurface8
+    400140: polySurface81
+    400142: polySurface82
+    400144: polySurface85
+    400146: polySurface87
+    400148: polySurface90
+    400150: polySurface93
+    400152: pPlane102
+    400154: pPlane103
+    400156: pPlane104
+    400158: pPlane105
+    400160: pPlane106
+    400162: pPlane107
+    400164: pPlane108
+    400166: pPlane109
+    400168: pPlane109 1
+    400170: pPlane110
+    400172: pPlane110 1
+    400174: pPlane111
+    400176: pPlane113
+    400178: pPlane114
+    400180: pPlane115
+    400182: pPlane116
+    400184: pPlane118
+    400186: pPlane14
+    400188: pPlane22
+    400190: pPlane24
+    400192: pPlane53
+    400194: pPlane53 1
+    400196: pPlane53 2
+    400198: pPlane54
+    400200: pPlane96
+    400202: pPlane97
+    400204: STEPS1
+    400206: STEPS2
+    400208: STEPS3
+    400210: STEPS4
+    400212: //RootNode
+    2100000: Brick
+    2100002: White
+    2100004: Texture2
+    2100006: Texture3
+    2100008: Texture4
+    2100010: phong1
+    2100012: Coppper_kalasam
+    2100014: Texture5
+    2100016: s
+    2100018: Wood
+    2100020: Metal
+    2100022: Texture1
+    2300000: B3
+    2300002: B4
+    2300004: Door1
+    2300006: Door2
+    2300008: Door_Pillaar_up
+    2300010: Floor
+    2300012: kalasam
+    2300014: kalasam 1
+    2300016: kalasam 2
+    2300018: kalasam1
+    2300020: kalasam2
+    2300022: kalasam3
+    2300024: kalasam4
+    2300026: pCube20
+    2300028: pCube21
+    2300030: pCube22
+    2300032: pCube23
+    2300034: polySurface1
+    2300036: polySurface100
+    2300038: polySurface104
+    2300040: polySurface105
+    2300042: polySurface107
+    2300044: polySurface108
+    2300046: polySurface109
+    2300048: polySurface2
+    2300050: polySurface3
+    2300052: polySurface37
+    2300054: polySurface38
+    2300056: polySurface4
+    2300058: polySurface40
+    2300060: polySurface40 1
+    2300062: polySurface40 2
+    2300064: polySurface41
+    2300066: polySurface42
+    2300068: polySurface48
+    2300070: polySurface54
+    2300072: polySurface55
+    2300074: polySurface61
+    2300076: polySurface63
+    2300078: polySurface64
+    2300080: polySurface69
+    2300082: polySurface69 1
+    2300084: polySurface70
+    2300086: polySurface70 1
+    2300088: polySurface71
+    2300090: polySurface71 1
+    2300092: polySurface72
+    2300094: polySurface72 1
+    2300096: polySurface75
+    2300098: polySurface75 1
+    2300100: polySurface77
+    2300102: polySurface77 1
+    2300104: polySurface79
+    2300106: polySurface8
+    2300108: polySurface81
+    2300110: polySurface82
+    2300112: polySurface85
+    2300114: polySurface87
+    2300116: polySurface90
+    2300118: polySurface93
+    2300120: pPlane102
+    2300122: pPlane103
+    2300124: pPlane104
+    2300126: pPlane105
+    2300128: pPlane106
+    2300130: pPlane107
+    2300132: pPlane108
+    2300134: pPlane109
+    2300136: pPlane109 1
+    2300138: pPlane110
+    2300140: pPlane110 1
+    2300142: pPlane111
+    2300144: pPlane113
+    2300146: pPlane114
+    2300148: pPlane115
+    2300150: pPlane116
+    2300152: pPlane118
+    2300154: pPlane14
+    2300156: pPlane22
+    2300158: pPlane24
+    2300160: pPlane53
+    2300162: pPlane53 1
+    2300164: pPlane53 2
+    2300166: pPlane54
+    2300168: pPlane96
+    2300170: pPlane97
+    2300172: STEPS1
+    2300174: STEPS2
+    2300176: STEPS3
+    2300178: STEPS4
+    3300000: B3
+    3300002: B4
+    3300004: Door1
+    3300006: Door2
+    3300008: Door_Pillaar_up
+    3300010: Floor
+    3300012: kalasam
+    3300014: kalasam 1
+    3300016: kalasam 2
+    3300018: kalasam1
+    3300020: kalasam2
+    3300022: kalasam3
+    3300024: kalasam4
+    3300026: pCube20
+    3300028: pCube21
+    3300030: pCube22
+    3300032: pCube23
+    3300034: polySurface1
+    3300036: polySurface100
+    3300038: polySurface104
+    3300040: polySurface105
+    3300042: polySurface107
+    3300044: polySurface108
+    3300046: polySurface109
+    3300048: polySurface2
+    3300050: polySurface3
+    3300052: polySurface37
+    3300054: polySurface38
+    3300056: polySurface4
+    3300058: polySurface40
+    3300060: polySurface40 1
+    3300062: polySurface40 2
+    3300064: polySurface41
+    3300066: polySurface42
+    3300068: polySurface48
+    3300070: polySurface54
+    3300072: polySurface55
+    3300074: polySurface61
+    3300076: polySurface63
+    3300078: polySurface64
+    3300080: polySurface69
+    3300082: polySurface69 1
+    3300084: polySurface70
+    3300086: polySurface70 1
+    3300088: polySurface71
+    3300090: polySurface71 1
+    3300092: polySurface72
+    3300094: polySurface72 1
+    3300096: polySurface75
+    3300098: polySurface75 1
+    3300100: polySurface77
+    3300102: polySurface77 1
+    3300104: polySurface79
+    3300106: polySurface8
+    3300108: polySurface81
+    3300110: polySurface82
+    3300112: polySurface85
+    3300114: polySurface87
+    3300116: polySurface90
+    3300118: polySurface93
+    3300120: pPlane102
+    3300122: pPlane103
+    3300124: pPlane104
+    3300126: pPlane105
+    3300128: pPlane106
+    3300130: pPlane107
+    3300132: pPlane108
+    3300134: pPlane109
+    3300136: pPlane109 1
+    3300138: pPlane110
+    3300140: pPlane110 1
+    3300142: pPlane111
+    3300144: pPlane113
+    3300146: pPlane114
+    3300148: pPlane115
+    3300150: pPlane116
+    3300152: pPlane118
+    3300154: pPlane14
+    3300156: pPlane22
+    3300158: pPlane24
+    3300160: pPlane53
+    3300162: pPlane53 1
+    3300164: pPlane53 2
+    3300166: pPlane54
+    3300168: pPlane96
+    3300170: pPlane97
+    3300172: STEPS1
+    3300174: STEPS2
+    3300176: STEPS3
+    3300178: STEPS4
+    4300000: polySurface41
+    4300002: polySurface55
+    4300004: pPlane54
+    4300006: polySurface8
+    4300008: polySurface48
+    4300010: polySurface105
+    4300012: polySurface107
+    4300014: polySurface38
+    4300016: polySurface37
+    4300018: pPlane118
+    4300020: polySurface109
+    4300022: polySurface108
+    4300024: Floor
+    4300026: kalasam
+    4300028: pPlane53
+    4300030: polySurface40
+    4300032: kalasam
+    4300034: pPlane53
+    4300036: polySurface40
+    4300038: polySurface90
+    4300040: pCube23
+    4300042: pPlane109
+    4300044: pPlane110
+    4300046: polySurface87
+    4300048: polySurface93
+    4300050: pPlane111
+    4300052: pPlane109
+    4300054: pPlane110
+    4300056: polySurface72
+    4300058: polySurface71
+    4300060: polySurface70
+    4300062: polySurface69
+    4300064: polySurface75
+    4300066: polySurface77
+    4300068: pPlane108
+    4300070: polySurface104
+    4300072: pPlane113
+    4300074: kalasam2
+    4300076: kalasam3
+    4300078: pPlane115
+    4300080: pPlane114
+    4300082: kalasam4
+    4300084: polySurface42
+    4300086: pPlane24
+    4300088: pPlane22
+    4300090: pPlane14
+    4300092: STEPS4
+    4300094: STEPS3
+    4300096: STEPS1
+    4300098: Door1
+    4300100: polySurface72
+    4300102: polySurface71
+    4300104: polySurface70
+    4300106: polySurface69
+    4300108: polySurface75
+    4300110: polySurface77
+    4300112: pPlane104
+    4300114: pPlane105
+    4300116: pPlane107
+    4300118: polySurface79
+    4300120: polySurface81
+    4300122: polySurface82
+    4300124: pPlane106
+    4300126: pCube22
+    4300128: polySurface85
+    4300130: polySurface64
+    4300132: kalasam
+    4300134: pPlane53
+    4300136: polySurface40
+    4300138: polySurface54
+    4300140: B3
+    4300142: kalasam1
+    4300144: Door_Pillaar_up
+    4300146: B4
+    4300148: pCube21
+    4300150: polySurface100
+    4300152: polySurface4
+    4300154: STEPS2
+    4300156: polySurface3
+    4300158: polySurface2
+    4300160: polySurface1
+    4300162: pCube20
+    4300164: polySurface61
+    4300166: pPlane97
+    4300168: pPlane103
+    4300170: Door2
+    4300172: pPlane116
+    4300174: pPlane102
+    4300176: polySurface63
+    4300178: pPlane96
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brick
+    second: {fileID: 2100000, guid: e9044a46a17931945a838422737b7166, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Coppper_kalasam
+    second: {fileID: 2100000, guid: 1949b3ad94458f545873b2fcc29d3691, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 5a90027a9420b184f927f75858c4f952, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Texture1
+    second: {fileID: 2100000, guid: 7be75cce40e208c46b12d624edacda98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Texture2
+    second: {fileID: 2100000, guid: 9a971748dc6bc6346b9f4b026fdacc4a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Texture3
+    second: {fileID: 2100000, guid: 51de72bb361db144ead80674502694d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Texture4
+    second: {fileID: 2100000, guid: 62dfe7ea0fa990b46a7b23f58deb876e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Texture5
+    second: {fileID: 2100000, guid: f74e6e66f50dc824dbdb2a2ad3091f6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 9dbcefad44eb93944a069c6aeb922a67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: b964bfc0330ea4345bb8c698ef2269cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong1
+    second: {fileID: 2100000, guid: bea65b80529e6904f925b3cf2b0e17c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: s
+    second: {fileID: 2100000, guid: 5fd81777993b9e54cb6fa2e2aa22acde, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
