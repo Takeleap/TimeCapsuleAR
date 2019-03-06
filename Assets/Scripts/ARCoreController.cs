@@ -116,34 +116,48 @@ public class ARCoreController : MonoBehaviour
             {
                 if (isInstanciated == false)
                 {
-                    isInstanciated = true;
-                    instructions.transform.GetChild(1).gameObject.SetActive(false);
-                    // Instantiate Andy model at the hit pose.
-                    mapObject = Instantiate(mapPrefab, hit.Pose.position, hit.Pose.rotation);
-
-                    // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
-                    mapObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
-
-                    // Reducing the scale of the instanciated object
-                    mapObject.gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-
-                    //// To rotate the map in x axis
-                    //mapObject.transform.Rotate(-180f, 0f, 180f);
-                    // Create an anchor to allow ARCore to track the hitpoint as understanding of the physical
-                    // world evolves.
-                    anchor = hit.Trackable.CreateAnchor(hit.Pose);
-                    instructions.transform.GetChild(2).gameObject.SetActive(true);
-                    scanningUI.transform.GetChild(1).gameObject.SetActive(true);
-
-                    // Make Andy model a child of the anchor.
-                    mapObject.transform.parent = anchor.transform;
-                    placesIndia.SetActive(true);
-                    foreach (GameObject planes in detectedPlanesList)
-                    {
-                        planes.SetActive(false);
-                    }
-                    
+                    SetMap();
                 }
+            }
+        }
+    }
+
+    public void SetMap()
+    {
+        isInstanciated = true;
+        instructions.transform.GetChild(1).gameObject.SetActive(false);
+
+        print("MapPrefab Name : " + mapPrefab.name);
+
+        // Instantiate Andy model at the hit pose.
+        mapObject = Instantiate(mapPrefab, hit.Pose.position, hit.Pose.rotation);
+
+        // Compensate for the hitPose rotation facing away from the raycast (i.e. camera).
+        mapObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
+
+        // Reducing the scale of the instanciated object
+        mapObject.gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+
+
+        Debug.LogError("Hit.Pose.position : " + hit.Pose.position);
+        Debug.LogError("Hit.Pose.rotation : " + hit.Pose.rotation);
+
+        //// To rotate the map in x axis
+        //mapObject.transform.Rotate(-180f, 0f, 180f);
+        // Create an anchor to allow ARCore to track the hitpoint as understanding of the physical
+        // world evolves.
+        anchor = hit.Trackable.CreateAnchor(hit.Pose);
+        instructions.transform.GetChild(2).gameObject.SetActive(true);
+        scanningUI.transform.GetChild(1).gameObject.SetActive(true);
+
+        // Make Andy model a child of the anchor.
+        mapObject.transform.parent = anchor.transform;
+        placesIndia.SetActive(true);
+        if (detectedPlanesList.Count > 0)
+        {
+            foreach (GameObject planes in detectedPlanesList)
+            {
+                planes.SetActive(false);
             }
         }
     }

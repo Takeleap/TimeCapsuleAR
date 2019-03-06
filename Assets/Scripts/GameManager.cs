@@ -8,6 +8,8 @@ using System;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
+    public Transform[] sliderPlane;
+    public Slider timeSlider;
     public Button backButton;
     ARCoreController arCoreInstance;
     GameObject mapObject;
@@ -35,13 +37,23 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void OnSliderChangedValue()
     {
+        if (sliderPlane != null)
+        {
+            switch (TestScript.CurrentID)
+            {
+                case "POI1":
+                    sliderPlane[0].localPosition = new Vector3(sliderPlane[0].localPosition.x, timeSlider.value, sliderPlane[0].localPosition.z);
+                    break;
+                case "POI2":
+                    sliderPlane[1].localPosition = new Vector3(sliderPlane[1].localPosition.x, timeSlider.value, sliderPlane[1].localPosition.z);
+                    break;
+            }
+        }
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (ARCoreController.anchor != null)
@@ -72,9 +84,12 @@ public class GameManager : MonoBehaviour
         print("State Object Null");
         print(ARCoreController.anchor.transform.GetChild(0).gameObject.name);
         Destroy(ARCoreController.anchor.transform.GetChild(0).gameObject);
-        mapObject = Instantiate(map, ARCoreController.hit.Pose.position, ARCoreController.hit.Pose.rotation);
-        mapObject.transform.Rotate(new Vector3(0f, 180f, 0f));
-        mapObject.transform.parent = ARCoreController.anchor.transform;
+        Debug.LogError("ARCoreController.hit.Pose.position : " + ARCoreController.hit.Pose.position);
+        Debug.LogError("ARCoreController.hit.Pose.rotation : " + ARCoreController.hit.Pose.rotation);
+        //mapObject = Instantiate(map, ARCoreController.hit.Pose.position, ARCoreController.hit.Pose.rotation);
+        //mapObject.transform.Rotate(0, 180f, 0, Space.Self);
+        //mapObject.transform.parent = ARCoreController.anchor.transform;
+        ARCoreController.instance.SetMap();
 
         print("scanningUI : " + ARCoreController.instance.scanningUI.transform.GetChild(1).gameObject.activeSelf);
         print("instructions : " + ARCoreController.instance.instructions.transform.GetChild(2).gameObject.activeSelf);
@@ -84,6 +99,10 @@ public class GameManager : MonoBehaviour
             ARCoreController.instance.scanningUI.transform.GetChild(1).gameObject.SetActive(true);
             ARCoreController.instance.instructions.transform.GetChild(2).gameObject.SetActive(true);
         }
+        if(TestScript.instance.sliderTime.activeSelf)
+        {
+            TestScript.instance.sliderTime.SetActive(false);
+        }
     }
 
 
@@ -92,7 +111,8 @@ public class GameManager : MonoBehaviour
         if (TestScript.instance != null)
         {
             Debug.LogError("Not Null");
-            TestScript.instance.BiharState();
+            //TestScript.instance.BiharState();
+            ARCoreController.anchor.transform.GetComponentInChildren<TestScript>().BiharState();
         }
         else
         {

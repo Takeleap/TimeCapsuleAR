@@ -21,7 +21,11 @@ public class TestScript : MonoBehaviour
     [Header("ObjectMovement")]
     public Transform cameraTransform;
     public float distanceFromCamera = 1f;
-
+    public GameObject sliderTime;
+    public static string CurrentID;
+    public GameObject SariputtaStupaInfo;
+    public GameObject[] infoandAudio;
+    enum POIName { POI1 = 1, POI2 = 2 };
 
     // Start is called before the first frame update
     void Start()
@@ -78,10 +82,12 @@ public class TestScript : MonoBehaviour
             nalandha.gameObject.SetActive(true);
             if (stateObject == null)
             {
-                print("State Object Null");
+                print("State Object Null" + nalandha.name);
                 stateObject = Instantiate(nalandha, ARCoreController.hit.Pose.position, ARCoreController.hit.Pose.rotation);
                 stateObject.transform.Rotate(0, 180.0f, 0, Space.Self);
-                stateObject.transform.position = new Vector3(2.1f, -29f, 66f);
+                float yAxisHeight = stateObject.transform.position.y + 1f;
+                print("yAxisHeight : " + yAxisHeight);
+                stateObject.transform.position = new Vector3(stateObject.transform.position.x, yAxisHeight, stateObject.transform.position.z);
                 stateObject.transform.parent = ARCoreController.anchor.transform;
                 if (ARCoreController.instance.scanningUI.transform.GetChild(1).gameObject.activeSelf &&
                     ARCoreController.instance.instructions.transform.GetChild(2).gameObject.activeSelf)
@@ -89,8 +95,6 @@ public class TestScript : MonoBehaviour
                     ARCoreController.instance.scanningUI.transform.GetChild(1).gameObject.SetActive(false);
                     ARCoreController.instance.instructions.transform.GetChild(2).gameObject.SetActive(false);
                 }
-                //StopAllCoroutines();
-                //StartCoroutine("RotationMethod");
             }
             else
             {
@@ -101,12 +105,16 @@ public class TestScript : MonoBehaviour
     }
     public void BiharState()
     {
+        if (mapPosition != null)
+        {
+            print("MapPosition is Null");
+            //mapPosition = ARCoreController.anchor.transform.GetChild(0).gameObject.transform.position;
+        }
         if (!isUp)
         {
             print(stateBihar.transform.position.y);
             stateBihar.transform.DOLocalMoveY(0.096f, 0.5f).OnComplete(() => tweener(true));
-            mapPosition = ARCoreController.anchor.transform.position;
-            ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(-0.700f, 0.5f);
+            //ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(-0.700f, 0.5f);
             ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalMoveY(0.700f, 0.5f);
             ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalRotate(
                 new Vector3(25.0f, 180f,
@@ -116,7 +124,7 @@ public class TestScript : MonoBehaviour
         else
         {
             stateBihar.transform.DOLocalMoveY(0.05000001f, 0.5f).OnComplete(() => tweener(false));
-            ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(0.700f, 0.5f);
+            //ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(mapPosition.z, 0.5f);
             ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalMoveY(-0.700f, 0.5f);
             ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalRotate(
                     new Vector3(0f, 180f,
@@ -140,12 +148,27 @@ public class TestScript : MonoBehaviour
         nalandhaIcon.GetComponent<SpriteRenderer>().sprite = nalandhaAfter;
     }
 
-    public void TemplePointOfInterest()
+    public void TemplePointOfInterest(string poiName)
     {
         if (stateObject != null)
         {
-            stateObject.transform.DORotate(new Vector3(0f, 60.709f, 0f), 0.75f);
+            GameManager.instance.timeSlider.gameObject.SetActive(true);
+            CurrentID = poiName;
+            Vector3 lookAtPos = Camera.main.transform.position;
+            lookAtPos.y = stateObject.transform.position.y;
+            stateObject.transform.DOLookAt(lookAtPos, 0.75f);
+            print("Calling TemplePointOfInterest");
+            InfoandAudio(poiName);
         }
     }
 
+    public void InfoandAudio(string poiName)
+    {
+
+    }
+
+    //public void SariputtaStupaInfoMethod()
+    //{
+    //    SariputtaStupaInfo.SetActive(true);
+    //}
 }
