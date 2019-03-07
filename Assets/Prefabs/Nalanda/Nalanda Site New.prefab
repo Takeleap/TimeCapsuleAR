@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 3214}
   - component: {fileID: 3163}
   - component: {fileID: 3225}
+  - component: {fileID: 1352265909}
   m_Layer: 0
   m_Name: Temple3
   m_TagString: Untagged
@@ -715,7 +716,12 @@ MonoBehaviour:
   distanceFromCamera: 1
   sliderTime: {fileID: 0}
   SariputtaStupaInfo: {fileID: 0}
-  infoandAudio: []
+  infoandAudio:
+  - {fileID: 717}
+  - {fileID: 747}
+  - {fileID: 733}
+  - {fileID: 750}
+  - {fileID: 753}
   sliderValues: {x: -4.8, y: 33.6}
 --- !u!65 &3163
 BoxCollider:
@@ -742,6 +748,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460f33d83732b474d9354b421d8f7e4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1352265909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f4e5bdcd26c814783afa023cf89bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  siteManager: {fileID: 0}
+  infoObjects:
+  - {fileID: 717}
+  - {fileID: 747}
+  - {fileID: 733}
+  - {fileID: 750}
+  - {fileID: 753}
 --- !u!1 &717
 GameObject:
   m_ObjectHideFlags: 0
@@ -7924,45 +7949,41 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 4.49
       objectReference: {fileID: 0}
-    - target: {fileID: 400138, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
-      propertyPath: m_RootOrder
-      value: 21
-      objectReference: {fileID: 0}
     - target: {fileID: 400136, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 400142, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 400140, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 400130, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
-      propertyPath: m_RootOrder
-      value: 17
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 400128, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400134, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400132, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 400146, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 400122, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 400120, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
@@ -7970,19 +7991,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400126, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 400124, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 400118, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 400116, guid: 5c2b53b297a70424abbe83538375417f, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c2b53b297a70424abbe83538375417f, type: 3}

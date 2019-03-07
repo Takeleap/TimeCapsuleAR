@@ -10,7 +10,10 @@ public class InfoManager : MonoBehaviour
     public void TurnOnInfoObjects ()
     {
         if (siteManager.currentInfoManager != null)
+        {
             siteManager.currentInfoManager.TurnOffInfoObjects();
+            print("currentInfoManager Null");
+        }
 
         siteManager.currentInfoManager = this;
 

@@ -49,7 +49,6 @@ public class NalandhaObjectsHidingScript : MonoBehaviour
     public void ObjectSetActive(string buildingID)
     {
         print(buildingID + "_OLD");
-        ResetObjects();
         foreach (GameObject item in nalandhaObjects)
         {
             if (item.name == buildingID || item.name ==buildingID+"_OLD")
