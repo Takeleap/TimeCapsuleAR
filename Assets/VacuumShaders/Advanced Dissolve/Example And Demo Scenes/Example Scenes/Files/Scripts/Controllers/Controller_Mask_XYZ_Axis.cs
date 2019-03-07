@@ -11,9 +11,9 @@ namespace AdvancedDissolve_Example
 
         public enum AXIS { X = 0, Y, Z }
         public enum SPACE { World = 0, Local }
+        
 
-
-        public float offsetAdjust;
+        
         public bool updateGlobal;
 
         public Material[] materials;

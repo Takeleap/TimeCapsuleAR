@@ -8,9 +8,9 @@ using UnityEngine.SceneManagement;
 
 public class SplashScreenManager : MonoBehaviour
 {
-    public  VideoPlayer videoPlayer;
-    public  Image       loadingBarLeft;
-    public  GameObject  loadingScreen;
+    public VideoPlayer videoPlayer;
+    public Image loadingBarLeft;
+    public GameObject loadingScreen;
 
     private bool videoCompleted = true;
 
@@ -19,20 +19,20 @@ public class SplashScreenManager : MonoBehaviour
         videoPlayer.prepareCompleted += SetVideoPlayer;
     }
 
-    void SetVideoPlayer (VideoPlayer vp)
+    void SetVideoPlayer(VideoPlayer vp)
     {
         videoPlayer.Play();
         Invoke("SetComplete", 1f);
     }
 
-    void SetComplete ()
+    void SetComplete()
     {
         videoCompleted = false;
     }
 
-    void Update ()
+    void Update()
     {
-        if(!videoPlayer.isPlaying)
+        if (!videoPlayer.isPlaying)
         {
             if (!videoCompleted)
             {
@@ -42,7 +42,7 @@ public class SplashScreenManager : MonoBehaviour
         }
     }
 
-    void VideoCompleted ()
+    void VideoCompleted()
     {
         loadingScreen.SetActive(true);
         loadingBarLeft.transform.DOScaleX(8.0f, 2f).OnComplete(() => TweenerComplete());
@@ -56,7 +56,7 @@ public class SplashScreenManager : MonoBehaviour
     void TweenerComplete()
     {
         print("Calling Tweener Complete");
-       loadingBarLeft.transform.localScale = new Vector3(0f,1f,1f);
+        loadingBarLeft.transform.localScale = new Vector3(0f, 1f, 1f);
         SceneManager.LoadScene(1);
     }
 }

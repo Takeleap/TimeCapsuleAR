@@ -22,11 +22,14 @@ public class ARCoreController : MonoBehaviour
     public static TrackableHit hit;
     public static GameObject mapObject;
     public static Anchor anchor;
+    public static Vector3 hitPos;
+    public static Quaternion hitRot;
     bool isScanInsClosed = false;
     [Header("ScanningUI")]
     public GameObject instructions;
     public GameObject scanningUI;
     public GameObject placesIndia;
+
 
     /// <summary>
     /// Awake is called when the script instance is being loaded.
@@ -136,11 +139,12 @@ public class ARCoreController : MonoBehaviour
         mapObject.transform.Rotate(0, k_ModelRotation, 0, Space.Self);
 
         // Reducing the scale of the instanciated object
-        mapObject.gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
-
-
+        //mapObject.gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        hitRot = hit.Pose.rotation;
+        hitPos = hit.Pose.position;
         Debug.LogError("Hit.Pose.position : " + hit.Pose.position);
         Debug.LogError("Hit.Pose.rotation : " + hit.Pose.rotation);
+        Debug.LogError("mapObject : " + mapObject.transform.position);
 
         //// To rotate the map in x axis
         //mapObject.transform.Rotate(-180f, 0f, 180f);

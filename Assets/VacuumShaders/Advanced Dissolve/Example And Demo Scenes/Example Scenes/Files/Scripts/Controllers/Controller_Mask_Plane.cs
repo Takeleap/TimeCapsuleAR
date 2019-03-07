@@ -91,7 +91,7 @@ namespace AdvancedDissolve_Example
             }
         }
 
-        public float number;
+
         void UpdateShaderData(int maskID, GameObject plane)
         {
             if (plane == null)
@@ -99,7 +99,6 @@ namespace AdvancedDissolve_Example
 
 
             Vector3 position = plane.transform.position;
-            position.z = position.z - number;
             Vector3 normal = plane.transform.up;
 
 

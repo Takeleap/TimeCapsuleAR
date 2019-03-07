@@ -26,6 +26,7 @@ public class TestScript : MonoBehaviour
     public GameObject SariputtaStupaInfo;
     public GameObject[] infoandAudio;
     enum POIName { POI1 = 1, POI2 = 2 };
+    public Vector2 sliderValues;
 
     // Start is called before the first frame update
     void Start()
@@ -125,7 +126,7 @@ public class TestScript : MonoBehaviour
         {
             stateBihar.transform.DOLocalMoveY(0.05000001f, 0.5f).OnComplete(() => tweener(false));
             //ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalMoveZ(mapPosition.z, 0.5f);
-            ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalMoveY(-0.700f, 0.5f);
+            ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalMoveY(0f, 0.5f);
             ARCoreController.anchor.transform.GetChild(0).gameObject.transform.DOLocalRotate(
                     new Vector3(0f, 180f,
                     ARCoreController.anchor.transform.GetChild(0).gameObject.transform.localRotation.z), 0.05f);
@@ -153,12 +154,16 @@ public class TestScript : MonoBehaviour
         if (stateObject != null)
         {
             GameManager.instance.timeSlider.gameObject.SetActive(true);
+            GameManager.instance.timeSlider.value = sliderValues.y;
+            GameManager.instance.timeSlider.minValue = sliderValues.x;
+            GameManager.instance.timeSlider.maxValue = sliderValues.y;
             CurrentID = poiName;
             Vector3 lookAtPos = Camera.main.transform.position;
             lookAtPos.y = stateObject.transform.position.y;
             stateObject.transform.DOLookAt(lookAtPos, 0.75f);
             print("Calling TemplePointOfInterest");
-            InfoandAudio(poiName);
+            NalandhaObjectsHidingScript.instance.ObjectSetActive(poiName);
+            //InfoandAudio(poiName);
         }
     }
 

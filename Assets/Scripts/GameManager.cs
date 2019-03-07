@@ -43,11 +43,20 @@ public class GameManager : MonoBehaviour
         {
             switch (TestScript.CurrentID)
             {
-                case "POI1":
+                case "Temple_3_New":
                     sliderPlane[0].localPosition = new Vector3(sliderPlane[0].localPosition.x, timeSlider.value, sliderPlane[0].localPosition.z);
                     break;
-                case "POI2":
+                case "T12_New":
                     sliderPlane[1].localPosition = new Vector3(sliderPlane[1].localPosition.x, timeSlider.value, sliderPlane[1].localPosition.z);
+                    break;
+                case "M1_New":
+                    sliderPlane[2].localPosition = new Vector3(sliderPlane[2].localPosition.x, timeSlider.value, sliderPlane[2].localPosition.z);
+                    break;
+                case "M1A_New":
+                    sliderPlane[2].localPosition = new Vector3(sliderPlane[2].localPosition.x, timeSlider.value, sliderPlane[2].localPosition.z);
+                    break;
+                case "M1B_New":
+                    sliderPlane[3].localPosition = new Vector3(sliderPlane[3].localPosition.x, timeSlider.value, sliderPlane[3].localPosition.z);
                     break;
             }
         }
@@ -84,13 +93,12 @@ public class GameManager : MonoBehaviour
         print("State Object Null");
         print(ARCoreController.anchor.transform.GetChild(0).gameObject.name);
         Destroy(ARCoreController.anchor.transform.GetChild(0).gameObject);
-        Debug.LogError("ARCoreController.hit.Pose.position : " + ARCoreController.hit.Pose.position);
-        Debug.LogError("ARCoreController.hit.Pose.rotation : " + ARCoreController.hit.Pose.rotation);
-        //mapObject = Instantiate(map, ARCoreController.hit.Pose.position, ARCoreController.hit.Pose.rotation);
-        //mapObject.transform.Rotate(0, 180f, 0, Space.Self);
-        //mapObject.transform.parent = ARCoreController.anchor.transform;
-        ARCoreController.instance.SetMap();
-
+        Debug.LogError("ARCoreController.hit.Pose.position : " + ARCoreController.hitPos);
+        Debug.LogError("ARCoreController.hit.Pose.rotation : " + ARCoreController.hitRot);
+        mapObject = Instantiate(map, ARCoreController.hitPos, ARCoreController.hitRot);
+        Debug.LogError("mapObject : " + mapObject.transform.position);
+        mapObject.transform.Rotate(0, 180f, 0, Space.Self);
+        mapObject.transform.parent = ARCoreController.anchor.transform;
         print("scanningUI : " + ARCoreController.instance.scanningUI.transform.GetChild(1).gameObject.activeSelf);
         print("instructions : " + ARCoreController.instance.instructions.transform.GetChild(2).gameObject.activeSelf);
         if (ARCoreController.instance.scanningUI.transform.GetChild(1).gameObject.activeSelf == false &&
@@ -99,7 +107,7 @@ public class GameManager : MonoBehaviour
             ARCoreController.instance.scanningUI.transform.GetChild(1).gameObject.SetActive(true);
             ARCoreController.instance.instructions.transform.GetChild(2).gameObject.SetActive(true);
         }
-        if(TestScript.instance.sliderTime.activeSelf)
+        if (TestScript.instance.sliderTime.activeSelf)
         {
             TestScript.instance.sliderTime.SetActive(false);
         }
