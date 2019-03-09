@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour
     public GameObject siteName;
     public GameObject poiObject;
     public Sprite[] poiSprites;
+    public GameObject poiNameObj, siteNameObj;
+    public Text poiNameText;
+    public NalandhaObjectsHidingScript nalandhaObjectsInstance;
+
     /// <summary>
     /// Awake is called when the script instance is being loaded.
     /// </summary>
@@ -28,6 +32,7 @@ public class GameManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(this.gameObject);
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
+            nalandhaObjectsInstance = NalandhaObjectsHidingScript.instance;
             print("Running");
         }
         else
@@ -50,13 +55,22 @@ public class GameManager : MonoBehaviour
                     sliderPlane[1].localPosition = new Vector3(sliderPlane[1].localPosition.x, timeSlider.value, sliderPlane[1].localPosition.z);
                     break;
                 case "M1_New":
-                    sliderPlane[2].localPosition = new Vector3(sliderPlane[2].localPosition.x, timeSlider.value, sliderPlane[2].localPosition.z);
-                    break;
                 case "M1A_New":
+                case "M1B_New":
+                case "M4_New":
+                case "M6_New":
+                case "M7_New":
+                case "M8_New":
+                case "M9_New":
+                case "M10_New":
+                case "M11_New":
                     sliderPlane[2].localPosition = new Vector3(sliderPlane[2].localPosition.x, timeSlider.value, sliderPlane[2].localPosition.z);
                     break;
-                case "M1B_New":
+                case "T13_New":
                     sliderPlane[3].localPosition = new Vector3(sliderPlane[3].localPosition.x, timeSlider.value, sliderPlane[3].localPosition.z);
+                    break;
+                case "T14_New":
+                    sliderPlane[4].localPosition = new Vector3(sliderPlane[4].localPosition.x, timeSlider.value, sliderPlane[4].localPosition.z);
                     break;
             }
         }
@@ -83,6 +97,14 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (ARCoreController.anchor.transform.GetChild(0).gameObject.name == "INDIA States(Clone)")
+            {
+                Application.Quit();
+            }
+        }
+
     }
 
     public void BackButton()
@@ -160,4 +182,22 @@ public class GameManager : MonoBehaviour
     //{
     //    new MediaLibrary().SavePicture(fileName, byteBuffer);
     //}
+
+    public void ObjectReset()
+    {
+        NalandhaObjectsHidingScript.instance.ResetObjects();
+    }
+
+
+    public void CloseInfoButton()
+    {
+        if(poiNameObj.activeSelf)
+        {
+
+        }
+        else
+        {
+            siteNameObj.SetActive(true);
+        }
+    }
 }

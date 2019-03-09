@@ -9,6 +9,8 @@ public class NalandhaObjectsHidingScript : MonoBehaviour
     public GameObject[] nalandhaObjects;
     public static NalandhaObjectsHidingScript instance;
     List<Vector3> modelSize = new List<Vector3>();
+    public GameObject sliderBar;
+    public GameObject poiName, siteName;
 
     void Awake()
     {
@@ -16,6 +18,9 @@ public class NalandhaObjectsHidingScript : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(this.gameObject);
+            sliderBar = TestScript.instance.sliderTime;
+            poiName = GameManager.instance.poiNameObj;
+            siteName = GameManager.instance.siteNameObj;
             print("Running");
         }
         else
@@ -34,47 +39,72 @@ public class NalandhaObjectsHidingScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        //#if UNITY_EDITOR
+        //        if (Input.GetKeyDown(KeyCode.A))
+        //        {
+        //            poiName.SetActive(false);
+        //            siteName.SetActive(true);
+        //            sliderBar.SetActive(false);
+        //            int i = 0;
+        //            foreach (GameObject item in nalandhaObjects)
+        //            {
+        //                item.transform.DOScale(modelSize[i], 1f);
+        //                i++;
+        //            }
+        //            modelSize.Clear();
+        //        }
+        //#endif
+        //        if (Input.GetKeyDown(KeyCode.Escape))
+        //        {
+        //            poiName.SetActive(false);
+        //            siteName.SetActive(true);
+        //            sliderBar.SetActive(false);
+        //            int i = 0;
+        //            foreach (GameObject item in nalandhaObjects)
+        //            {
+        //                item.transform.DOScale(modelSize[i], 1f);
+        //                i++;
+        //            }
+        //            modelSize.Clear();
+        //        }
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            int i = 0;
-            foreach (GameObject item in nalandhaObjects)
-            {
-                item.transform.DOScale(modelSize[i], 1f);
-                i++;
-            }
-            modelSize.Clear();
+            GameManager.instance.BackButton();
         }
     }
 
     public void ObjectSetActive(string buildingID)
     {
-        print(buildingID + "_OLD");
+        if (modelSize.Count > 0)
+            ResetObjects();
+        print(buildingID + "_OLD" + "modelSize.Count : "+ modelSize.Count);
         foreach (GameObject item in nalandhaObjects)
         {
-            if (item.name == buildingID || item.name ==buildingID+"_OLD")
+            if (item.name == buildingID || item.name == buildingID + "_OLD")
             {
-                print("True");
-                item.SetActive(true);
                 modelSize.Add(item.transform.localScale);
             }
             else
             {
-                print("False");
-                //item.SetActive(false);
                 item.transform.DOScale(0f, 1f);
                 modelSize.Add(item.transform.localScale);
             }
         }
     }
 
-    void ResetObjects()
+    public void ResetObjects()
     {
         int i = 0;
+        poiName.SetActive(false);
+        siteName.SetActive(true);
+        //sliderBar.SetActive(false);
+        print("Resetting Objects");
         foreach (GameObject item in nalandhaObjects)
         {
             item.transform.DOScale(modelSize[i], 1f);
             i++;
         }
-        modelSize.Clear();
+        //modelSize.Clear();
+        Debug.LogError("List Count = " + modelSize.Count);
     }
 }

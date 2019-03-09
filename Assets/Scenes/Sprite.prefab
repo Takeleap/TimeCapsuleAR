@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetImage: {fileID: 0}
-  frameRate: 30
+  frameRate: 60
   clips:
   - {fileID: 21300000, guid: 099c31deca10fd346b35a546f14eff29, type: 3}
   - {fileID: 21300000, guid: 1c262ab8c580122439828472cf77918c, type: 3}

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using DG.Tweening;
 using GoogleARCore;
+using UnityEngine.UI;
 
 public class TestScript : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class TestScript : MonoBehaviour
     public GameObject[] infoandAudio;
     enum POIName { POI1 = 1, POI2 = 2 };
     public Vector2 sliderValues;
+    public GameObject POINameHeader;
+    public Text poiNameText;
+    public GameObject poiNameObj, siteNameObj;
 
     // Start is called before the first frame update
     void Start()
@@ -42,10 +46,16 @@ public class TestScript : MonoBehaviour
         {
             instance = this;
             print("Null");
+            poiNameText = GameManager.instance.poiNameText;
+            poiNameObj = GameManager.instance.poiNameObj;
+            siteNameObj = GameManager.instance.siteNameObj;
         }
         else
         {
             instance.stateBihar = this.stateBihar;
+            poiNameText = GameManager.instance.poiNameText;
+            poiNameObj = GameManager.instance.poiNameObj;
+            siteNameObj = GameManager.instance.siteNameObj;
             print("Not Null");
         }
     }
@@ -153,6 +163,9 @@ public class TestScript : MonoBehaviour
     {
         if (stateObject != null)
         {
+            siteNameObj.SetActive(false);
+            poiNameObj.SetActive(true);
+            print(" siteNameObj : " + siteNameObj.activeSelf + "    , poiNameObj  : " + poiNameObj.activeSelf);
             GameManager.instance.timeSlider.gameObject.SetActive(true);
             GameManager.instance.timeSlider.value = sliderValues.y;
             GameManager.instance.timeSlider.minValue = sliderValues.x;
@@ -161,7 +174,7 @@ public class TestScript : MonoBehaviour
             Vector3 lookAtPos = Camera.main.transform.position;
             lookAtPos.y = stateObject.transform.position.y;
             stateObject.transform.DOLookAt(lookAtPos, 0.75f);
-            print("Calling TemplePointOfInterest");
+            InfoandAudio(poiName);
             NalandhaObjectsHidingScript.instance.ObjectSetActive(poiName);
             //InfoandAudio(poiName);
         }
@@ -169,11 +182,51 @@ public class TestScript : MonoBehaviour
 
     public void InfoandAudio(string poiName)
     {
+        switch (poiName)
+        {
+            case "Temple_3_New":
+                poiNameText.text = "Temple 3";
+                break;
+            case "T12_New":
+                poiNameText.text = "Temple 2";
+                break;
+            case "M1_New":
+                poiNameText.text = "Monastery 1";
+                break;
+            case "M1A_New":
+                poiNameText.text = "Monastery 1A";
+                break;
+            case "M1B_New":
+                poiNameText.text = "Monastery 1B";
+                break;
+            case "M4_New":
+                poiNameText.text = "Monastery 4";
+                break;
+            case "M6_New":
+                poiNameText.text = "Monastery 6";
+                break;
+            case "M7_New":
+                poiNameText.text = "Monastery 7";
+                break;
+            case "M8_New":
+                poiNameText.text = "Monastery 8";
+                break;
+            case "M9_New":
+                poiNameText.text = "Monastery 9";
+                break;
+            case "M10_New":
+                poiNameText.text = "Monastery 10";
+                break;
+            case "M11_New":
+                poiNameText.text = "Monastery 11";
+                break;
+            case "T13_New":
+                poiNameText.text = "Temple 13";
+                break;
+            case "T14_New":
+                poiNameText.text = "Temple 14";
+                break;
 
+        }
     }
-
-    //public void SariputtaStupaInfoMethod()
-    //{
-    //    SariputtaStupaInfo.SetActive(true);
-    //}
 }
